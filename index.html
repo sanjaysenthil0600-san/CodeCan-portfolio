@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SANJAY S | Web Developer – CodeCanvas</title>
+  <meta name="description" content="Portfolio of sanjay S, a front-end web developer building responsive sites and React apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Apply the saved theme before the page paints, so there is no flash -->
+  <script>
+    try {
+      var t = localStorage.getItem("codecanvas_theme");
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">CodeCanvas</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><button class="theme-btn" id="themeToggle" type="button" aria-label="Switch to dark mode">Dark</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hello">Hi, I'm</p>
+          <h1>Sanjay S</h1>
+          <p class="title">Front-End Web Developer</p>
+          <p class="intro">
+            I design and build fast, accessible websites and React apps.
+            I enjoy turning a blank page into something people actually use.
+          </p>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+        </div>
+        <!-- Decorative "code canvas" panel -->
+        <div class="code-panel" aria-hidden="true">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+<pre><code><span class="c">// developer.js</span>
+<span class="k">const</span> developer = {
+  name: <span class="s">"SANJAY S"</span>,
+  role: <span class="s">"Front-End Developer"</span>,
+  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>,
+          <span class="s">"React"</span>],
+  openToWork: <span class="k">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="avatar" role="img" aria-label="Profile picture placeholder">SS</div>
+        <div>
+          <h2>About me</h2>
+          <p>
+            I'm a computer science student who loves building for the web. I started with
+            plain HTML and CSS, moved on to JavaScript, and now build interactive interfaces
+            with React. I care about clean code, readable design, and sites that work on every screen.
+          </p>
+          <ul class="info-list">
+            <li><strong>Location</strong> Chennai, India</li>
+            <li><strong>Email</strong> sanjaysenthil@gmail.com.com</li>
+            <li><strong>Focus</strong> Front-end development</li>
+            <li><strong>Status</strong> Open to internships</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="card-grid">
+          <article class="card skill"><h3>HTML</h3><p>Semantic, accessible page structure.</p><div class="bar"><span style="width:90%"></span></div></article>
+          <article class="card skill"><h3>CSS</h3><p>Flexbox, Grid, variables and transitions.</p><div class="bar"><span style="width:85%"></span></div></article>
+          <article class="card skill"><h3>JavaScript</h3><p>DOM, events, fetch and async code.</p><div class="bar"><span style="width:80%"></span></div></article>
+          <article class="card skill"><h3>React</h3><p>Components, props and hooks.</p><div class="bar"><span style="width:70%"></span></div></article>
+          <article class="card skill"><h3>Git / GitHub</h3><p>Commits, branches and Pages deploys.</p><div class="bar"><span style="width:75%"></span></div></article>
+          <article class="card skill"><h3>Responsive Web Design</h3><p>Layouts that fit phones to desktops.</p><div class="bar"><span style="width:88%"></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <ol class="timeline">
+          <li>
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p class="meta">sathyabama university, Chennai &middot; 2022 &ndash; 2026</p>
+            <p>Data structures, databases, web technologies and software engineering.</p>
+          </li>
+          <li>
+            <h3>Higher Secondary (Computer Science)</h3>
+            <p class="meta">Dr Gsk matriculation school, Chennai &middot; 2020 &ndash; 2022</p>
+            <p>Built a first school project in Python and discovered web development.</p>
+          </li>
+          <li>
+            <h3>Certifications</h3>
+            <p class="meta">Online courses &middot; 2024 &ndash; 2025</p>
+            <p>Responsive Web Design, JavaScript Algorithms and React fundamentals.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <article class="card project">
+            <h3>CodeCanvas Portfolio</h3>
+            <p>This website: responsive layout, dark mode, a contact form and an admin inbox backed by Google Sheets.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Apps Script</li></ul>
+            <div class="btn-row">
+              <a class="btn btn-small btn-outline" href="https://github.com/your-username/CodeCanvas" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-small btn-primary" href="https://your-username.github.io/CodeCanvas/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>React Contact Cards</h3>
+            <p>Add people through a form and see their contact cards appear instantly in a responsive grid.</p>
+            <ul class="tags"><li>React</li><li>Vite</li><li>useState</li><li>CSS Grid</li></ul>
+            <div class="btn-row">
+              <a class="btn btn-small btn-outline" href="https://github.com/your-username/CodeCanvas/tree/main/react-contact-cards" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-small btn-primary" href="https://your-username.github.io/react-contact-cards/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>React Like / Unlike Cards</h3>
+            <p>A reusable Card component that keeps its own liked state and updates its label and status on click.</p>
+            <ul class="tags"><li>React</li><li>Props</li><li>useState</li></ul>
+            <div class="btn-row">
+              <a class="btn btn-small btn-outline" href="https://github.com/your-username/CodeCanvas/tree/main/react-like-card" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-small btn-primary" href="https://your-username.github.io/react-like-card/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section">
+      <div class="container resume-box">
+        <div>
+          <h2>Resume</h2>
+          <p>A one-page summary of my skills, education and projects. Add your own PDF as <code>assets/resume.pdf</code>.</p>
+        </div>
+        <a class="btn btn-primary" href="assets/resume.pdf" download>Download resume (PDF)</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h2>Contact me</h2>
+        <p class="lead">Have a project or an internship opening? Send a message and I'll reply soon.</p>
+        <form id="contactForm" class="form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+            <small class="error" data-error-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+            <small class="error" data-error-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" />
+            <small class="error" data-error-for="subject"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <small class="error" data-error-for="message"></small>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send message</button>
+          <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ ADMIN ============ -->
+    <section id="admin" class="section">
+      <div class="container narrow">
+        <h2>Admin area</h2>
+
+        <!-- Login (visible until you sign in) -->
+        <div id="loginSection">
+          <p class="lead">Sign in to read messages sent through the contact form.</p>
+          <form id="loginForm" class="form" novalidate>
+            <div class="field">
+              <label for="adminUser">Username or email</label>
+              <input id="adminUser" type="text" autocomplete="username" />
+            </div>
+            <div class="field">
+              <label for="adminPass">Password</label>
+              <input id="adminPass" type="password" autocomplete="current-password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Log in</button>
+            <p id="loginStatus" class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Responses (hidden until login) -->
+        <div id="responsesSection" class="hidden">
+          <div class="dash-head">
+            <p id="sourceLabel" class="meta"></p>
+            <div class="btn-row">
+              <button class="btn btn-small btn-outline" id="refreshBtn" type="button">Refresh</button>
+              <button class="btn btn-small btn-primary" id="logoutBtn" type="button">Log out</button>
+            </div>
+          </div>
+          <p id="dashStatus" class="status" role="status" aria-live="polite"></p>
+          <div id="responsesList" class="responses"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SANJAY S. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
